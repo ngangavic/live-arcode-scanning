@@ -2,8 +2,6 @@ package com.ngangavictor.livebarcodescanning
 
 import android.animation.AnimatorInflater
 import android.animation.AnimatorSet
-import android.app.Activity
-import android.content.Intent
 import android.hardware.Camera
 import android.os.Bundle
 import android.util.Log
@@ -79,7 +77,7 @@ class MainActivity : AppCompatActivity(), OnClickListener {
         super.onResume()
         if (!Utils.allPermissionsGranted(this)) {
             Utils.requestRuntimePermissions(this)
-        }else {
+        } else {
             workflowModel?.markCameraFrozen()
             settingsButton?.isEnabled = true
             currentWorkflowState = WorkflowModel.WorkflowState.NOT_STARTED
