@@ -2,6 +2,7 @@ package com.ngangavictor.livebarcodescanning
 
 import android.animation.AnimatorInflater
 import android.animation.AnimatorSet
+import android.content.Intent
 import android.hardware.Camera
 import android.os.Bundle
 import android.util.Log
@@ -118,9 +119,8 @@ class MainActivity : AppCompatActivity(), OnClickListener {
                 }
             }
             R.id.settings_button -> {
-                Toast.makeText(this, "Coming soon", Toast.LENGTH_LONG).show()
-//                settingsButton?.isEnabled = false
-//                startActivity(Intent(this, SettingsActivity::class.java))
+                settingsButton?.isEnabled = false
+                startActivity(Intent(this, SettingsActivity::class.java))
             }
         }
     }
