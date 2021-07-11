@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:background="@drawable/top_action_bar_scrim"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp">
+
+    <ImageView
+        android:id="@+id/close_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:contentDescription="@string/cd_close_button"
+        android:padding="12dp"
+        android:src="@drawable/ic_close_vd_white_24" />
+
+    <ImageView
+        android:id="@+id/settings_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/cd_settings_button"
+        android:padding="12dp"
+        android:src="@drawable/ic_settings_vd_white_24" />
+
+    <ImageView
+        android:id="@+id/flash_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/settings_button"
+        android:layout_toLeftOf="@id/settings_button"
+        android:contentDescription="@string/cd_flash_button"
+        android:padding="12dp"
+        android:src="@drawable/camera_flash" />
+
+</RelativeLayout>
